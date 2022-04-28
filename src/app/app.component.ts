@@ -35,7 +35,6 @@ export class AppComponent implements OnInit {
   }
 
   convertCurrency(order) {
-    console.log('called');
     if (order === 'first') {
       // since EUR is the only base price, will convert the value to EUR first
       const baseEUR = (this.firstVal / (+this.firstCur.price));
